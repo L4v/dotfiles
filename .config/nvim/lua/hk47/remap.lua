@@ -1,0 +1,5 @@
+vim.keymap.set("n", "<C-K>", require("hover").hover, {desc = "hover.nvim"})
+vim.keymap.set("n", "gK", require("hover").hover_select, {desc = "hover.nvim (select)"})
+vim.keymap.set('n', '<C-S-I>', vim.lsp.buf.format)
+vim.keymap.set('n', '<Space>pr', ':IncRename ')
+vim.keymap.set('n', '<ESC>', ':noh <CR>')
