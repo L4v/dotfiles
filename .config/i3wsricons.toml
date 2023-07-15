@@ -1,0 +1,35 @@
+[icons]
+# font awesome
+TelegramDesktop = ""
+firefox = ""
+Alacritty = ""
+Termite = ""
+kitty = ""
+Thunderbird = ""
+Gpick = ""
+Nautilus = "📘"
+code-oss = ""
+VSCodium = ""
+Spotify = ""
+discord = ""
+Eclipse= ""
+vlc=""
+Google-chrome=""
+Chromium=""
+Slack=""
+notion-app=""
+obsidian=""
+
+[aliases]
+TelegramDesktop = "Telegram"
+"Org\\.gnome\\.Nautilus" = "Nautilus"
+
+[general]
+separator = "|"
+default_icon = ""
+wm_property = "class"
+
+[options]
+remove_duplicates = false
+no_names = true
+no_icon_names = false
