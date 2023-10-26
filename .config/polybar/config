@@ -72,7 +72,7 @@ font-6 = custom:style=Regular:size=12;1
 
 ;modules-left = spotify spotify-prev spotify-play-pause spotify-next
 modules-center = i3
-modules-right = xkeyboard memory cpu battery pulseaudio backlight-acpi popup-calendar
+modules-right = xkeyboard filesystem memory cpu battery pulseaudio backlight-acpi popup-calendar
 
 tray-reparent = true
 tray-position = left
@@ -119,9 +119,10 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted =  %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+label-warn = LOW SPACE: %free%
 
 [module/bspwm]
 type = internal/bspwm

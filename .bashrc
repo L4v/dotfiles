@@ -66,3 +66,6 @@ eval "$(rbenv init -)"
 
 # NOTE(Jovan): Dotfiles bare git repository
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# NOTE(Jovan): conda setup
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
