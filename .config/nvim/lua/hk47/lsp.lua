@@ -43,6 +43,12 @@ mason_lspconfig.setup_handlers({
 	end,
 })
 
+lsp_config.dartls.setup({
+	cmd = { "/opt/flutter/bin/dart", "language-server", "--protocol=lsp" },
+	filetypes = { "dart" },
+	root_dir = lsp_config.util.root_pattern("pubspec.yaml", ".git"),
+})
+
 lsp_config.emmet_language_server.setup({})
 
 local mason_null_ls = require("mason-null-ls")

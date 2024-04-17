@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias lvide='lvide.sh'
 
 # NOTE(Jovan): For displaying git branch in
 # current dir (with dirty checking)
@@ -64,8 +65,18 @@ export PATH="$PATH:/home/hk47/.dotnet/tools"
 export PATH="$PATH:$HOME/.rbenv/bin"
 eval "$(rbenv init -)"
 
+# NOTE(Jovan): Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# NOTE(Jovan): .local
+export PATH="$HOME/.local/bin:$PATH"
+
 # NOTE(Jovan): Dotfiles bare git repository
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # NOTE(Jovan): conda setup
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+# Codeflex Shortcut aliases
+alias be='source ~/codeflex_be.sh'
+alias fe='source ~/codeflex_fe.sh'
